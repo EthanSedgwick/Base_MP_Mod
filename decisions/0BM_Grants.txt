@@ -1,0 +1,35 @@
+political_decisions = {
+	manage_grants_mil = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { has_country_flag = untouchable }
+			NOT = { has_global_flag = mil_goods_transfer_disabled }
+		}
+		allow = {
+			ai = no
+			NOT = { has_country_modifier = requested_grant }
+		}
+		effect = {
+			country_event = { id = 91400 days = 0 }
+			add_country_modifier = { name = requested_grant duration = 7 }
+		}
+	}
+	
+	manage_grants = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { has_country_flag = untouchable }
+			has_global_flag = mil_goods_transfer_disabled
+		}
+		allow = {
+			ai = no
+			NOT = { has_country_modifier = requested_grant }
+		}
+		effect = {
+			country_event = { id = 913991 days = 0 }
+			add_country_modifier = { name = requested_grant duration = 7 }
+		}
+	}
+}

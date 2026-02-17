@@ -1,0 +1,5 @@
+# Grant System
+requested_grant = {
+	icon = 10
+}
+
